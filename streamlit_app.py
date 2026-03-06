@@ -11,11 +11,20 @@ from io import BytesIO
 # =========================
 # CONFIG DO BANCO
 # =========================
-DB = dict(
-    host="localhost",
-    user="root",
-    password="123456",
-)
+def get_db_connection():
+    """Conecta ao banco de dados usando secrets do Streamlit."""
+    try:
+        conn = mysql.connector.connect(
+            host=st.secrets["mysql"]["host"],
+            user=st.secrets["mysql"]["user"],
+            password=st.secrets["mysql"]["password"],
+            database=st.secrets["mysql"]["database"]
+        )
+        return conn
+    except mysql.connector.Error as e:
+        st.error("Database connection failed: " + str(e))
+        raise e
+
 
 OUT_XLSX = "resultado.xlsx"
 OUT_LOG = "log.txt"
