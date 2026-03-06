@@ -1,5 +1,4 @@
-=== ASSISTENTE DE JOIN (MÚLTIPLAS TABELAS) ===
-Data/hora: 2026-03-05 01:30:50
-Saída XLSX: C:\Users\Thiago\Documents\Doctus\consultasql\resultado.xlsx
-Log: C:\Users\Thiago\Documents\Doctus\consultasql\log.txt
-Log de Concatenação: C:\Users\Thiago\Documents\Doctus\consultasql\concatenalog.txt
+================================================================================
+LOG DE CONSULTAS - 2026-03-05 23:57:26
+================================================================================
+[2026-03-05 23:57:26.102] APLICAÇÃO INICIADA
